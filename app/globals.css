@@ -215,7 +215,7 @@ button {
 .hero-inner {
   position: relative;
   z-index: 2;
-  width: min(660px, 45vw);
+  width: min(700px, 48vw);
   color: var(--stone-light);
 }
 
@@ -241,9 +241,10 @@ button {
 }
 
 .hero-title {
-  max-width: 940px;
-  font-size: clamp(56px, 8vw, 124px);
-  line-height: 0.9;
+  max-width: 100%;
+  font-size: clamp(50px, 7.2vw, 104px);
+  line-height: 0.94;
+  text-wrap: balance;
 }
 
 .word-mask {
@@ -1058,7 +1059,8 @@ legend {
   }
 
   .hero-title {
-    font-size: clamp(52px, 16vw, 86px);
+    font-size: clamp(44px, 11.5vw, 72px);
+    line-height: 0.98;
   }
 
   .hero-copy {
@@ -1163,6 +1165,11 @@ legend {
 }
 
 @media (max-width: 520px) {
+  .hero-title {
+    font-size: clamp(38px, 12vw, 56px);
+    line-height: 1;
+  }
+
   .hero-actions,
   .footer-actions {
     display: grid;
