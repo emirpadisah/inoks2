@@ -135,7 +135,7 @@ export default function Configurator() {
           </div>
         </fieldset>
 
-        <a className="quote-link" href="mailto:info@aysumermer.com">
+        <a className="quote-link" href="mailto:info@mantom.com">
           Teklif Al
         </a>
       </div>

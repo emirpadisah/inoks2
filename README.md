@@ -1,6 +1,6 @@
-# Aysu Mermer Landing
+# Mantom Landing
 
-Mermer ve doğal taş ihracatı yapan Aysu Mermer için modern, animasyonlu landing page.
+Mermer ve doğal taş ihracatı yapan Mantom için modern, animasyonlu landing page.
 
 ## Commands
 

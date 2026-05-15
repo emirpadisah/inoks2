@@ -8,8 +8,8 @@ export default function FooterCTA() {
         <h2>Teklif Alın</h2>
       </div>
       <div className="footer-actions">
-        <a href="mailto:info@aysumermer.com">
-          info@aysumermer.com <ArrowUpRight aria-hidden="true" size={18} strokeWidth={1.6} />
+        <a href="mailto:info@mantom.com">
+          info@mantom.com <ArrowUpRight aria-hidden="true" size={18} strokeWidth={1.6} />
         </a>
         <a href="#collection">
           Taşları İncele <ArrowUpRight aria-hidden="true" size={18} strokeWidth={1.6} />

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 const navLinks = [
@@ -11,9 +12,15 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <a className="brand" href="/#home" aria-label="Aysu Mermer ana sayfa">
-          <span className="brand-mark">A</span>
-          <span className="brand-text">Aysu Mermer</span>
+        <a className="brand" href="/#home" aria-label="Mantom ana sayfa">
+          <Image
+            className="brand-logo"
+            src="/mantom.webp"
+            alt="Mantom"
+            width={636}
+            height={422}
+            priority
+          />
         </a>
 
         <nav aria-label="Ana navigasyon" className="desktop-nav">
@@ -24,7 +31,7 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <a className="header-cta" href="mailto:info@aysumermer.com">
+        <a className="header-cta" href="mailto:info@mantom.com">
           Teklif <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.6} />
         </a>
       </div>

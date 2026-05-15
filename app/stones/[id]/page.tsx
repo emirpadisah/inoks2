@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: StonePageProps) {
   }
 
   return {
-    title: `${stone.name} | Aysu Mermer`,
+    title: `${stone.name} | Mantom`,
     description: stone.description
   };
 }
@@ -73,7 +73,7 @@ export default async function StonePage({ params }: StonePageProps) {
             </ul>
 
             <div className="stone-detail-actions">
-              <a href="mailto:info@aysumermer.com">
+              <a href="mailto:info@mantom.com">
                 Teklif al <ArrowUpRight aria-hidden="true" size={17} strokeWidth={1.6} />
               </a>
               <a href={stone.sourceUrl} rel="noreferrer" target="_blank">
