@@ -34,7 +34,7 @@ export default function StoneInspector({ stone }: StoneInspectorProps) {
       ref={frameRef}
     >
       <Image
-        alt={`${stone.name} plaka detay incelemesi`}
+        alt={`${stone.name} ürün detay incelemesi`}
         fill
         priority
         quality={85}

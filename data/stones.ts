@@ -30,125 +30,124 @@ export type ProcessStep = {
 export const stones: Stone[] = [
   {
     id: "marble",
-    name: "Mermer",
-    origin: "Afyon, Türkiye",
-    surface: "Cilalı / Honlu",
-    use: "Otel lobileri, banyolar, duvar kaplamaları",
+    name: "Teşhir & Servis Üniteleri",
+    origin: "Muğla, Türkiye",
+    surface: "AISI 304 / Cam koruma",
+    use: "Otel büfeleri, restoran servis hatları, catering",
     description:
-      "Sakin damar yapısı ve yüksek yansımalı yüzeyleriyle, güçlü ama yorucu olmayan iç mekanlar için seçilir.",
-    image: "/stones/marble-real.jpg",
-    source: "Pexels, fotoğraf 4709431",
-    sourceUrl: "https://www.pexels.com/photo/4709431/",
-    specs: ["20 mm plaka", "Bookmatch uygulamaya uygun", "Premium iç mekan kullanımı"]
+      "Bain-marie, teşhir vitrinleri ve servis bankoları; hijyenik paslanmaz yüzey ve proje ölçüsüne göre üretilir.",
+    image: "/gn-containers.jpg",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com",
+    specs: ["Cam sneeze guard", "GN 1/1 hazne uyumu", "Projeye özel ebat"]
   },
   {
     id: "travertine",
-    name: "Traverten",
-    origin: "Denizli, Türkiye",
-    surface: "Dolgulu / Fırçalı",
-    use: "Cepheler, zeminler, havuz çevreleri",
+    name: "Evye & Yıkama Tezgahları",
+    origin: "Muğla, Türkiye",
+    surface: "AISI 304 / Krom armatür",
+    use: "Endüstriyel mutfaklar, bulaşık alanları, hazırlık üniteleri",
     description:
-      "Lineer gözenek dokusu ve sıcak ton geçişleriyle mimari yüzeylere sakin bir Akdeniz karakteri katar.",
-    image: "/stones/travertine-real.jpg",
-    source: "Pexels, fotoğraf 4709025",
-    sourceUrl: "https://www.pexels.com/photo/4709025/",
-    specs: ["Dolgulu veya dolgusuz", "Fırçalı yüzey", "Cephe ve ıslak hacim kullanımı"]
+      "Tek veya çift hazneli evye tezgahları, süzgeçli yüzey ve alt raf seçenekleriyle yoğun kullanıma uygun üretilir.",
+    image: "/stainless-worktable.jpg",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com",
+    specs: ["Derin paslanmaz hazne", "Ayarlanabilir ayak", "Alt açık veya kapalı raf"]
   },
   {
     id: "limestone",
-    name: "Kireç Taşı",
-    origin: "Burdur, Türkiye",
-    surface: "Honlu / Kumlamalı",
-    use: "Dış cephe kaplama, peyzaj, zemin",
+    name: "Hazırlık & Soğutmalı Dolaplar",
+    origin: "Muğla, Türkiye",
+    surface: "AISI 304 / Soğutma ünitesi",
+    use: "Hazırlık mutfakları, otel ana mutfak, catering üretim",
     description:
-      "Dayanıklılık, ölçülü bir görünüm ve bütüncül taş etkisi isteyen projeler için mat ve rafine bir doku sunar.",
-    image: "/stones/limestone-real.jpg",
-    source: "Pexels, fotoğraf 16777685",
-    sourceUrl: "https://www.pexels.com/photo/16777685/",
-    specs: ["Honlu yüzey", "Büyük ebat panel", "Dış mekan şartnamesine uygun"]
+      "Soğutmalı çalışma tezgahları ve hazırlık dolapları; sıcaklık kontrollü, modüler ve proje planına göre konfigüre edilir.",
+    image: "/professional-equipment.jpg",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com",
+    specs: ["Kapılı veya çekmeceli alt modül", "Dijital sıcaklık kontrol", "Enerji verimli kompresör"]
   },
   {
     id: "onyx",
-    name: "Oniks",
-    origin: "Anadolu, Türkiye",
-    surface: "Cilalı / Bookmatch",
-    use: "Vurgu duvarları, barlar, resepsiyon bankoları",
+    name: "Çalışma & Depolama Tezgahları",
+    origin: "Muğla, Türkiye",
+    surface: "AISI 304 / Mat veya fırçalı",
+    use: "Ana üretim hatları, pastane, endüstriyel mutfak depo",
     description:
-      "Yarı geçirgen derinliği ve dramatik mineral çizgileriyle otel, villa ve özel alanlarda güçlü bir odak yaratır.",
-    image: "/stones/onyx-real.jpg",
-    source: "Pexels, fotoğraf 6634140",
-    sourceUrl: "https://www.pexels.com/photo/6634140/",
-    specs: ["Vurgu plakası", "Arkadan aydınlatmaya uygun", "Resepsiyon ve bar kullanımı"]
+      "Geniş çalışma yüzeyli tezgahlar ve depolama üniteleri; kaynaklı sağlam gövde ve hijyen standartlarına uygun bitiş.",
+    image: "/hood-pans.jpg",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com",
+    specs: ["Üst tezgah + alt kapak", "Hijyenik birleşim noktaları", "Projeye özel uzunluk"]
   }
 ];
 
-export const finishes = ["Honlu", "Cilalı", "Fırçalı", "Dolgulu"] as const;
+export const finishes = ["AISI 304", "AISI 430", "Mat", "Elektropolish"] as const;
 
-export const applications = ["Lobi", "Banyo", "Cephe", "Villa"] as const;
+export const applications = ["Otel", "Restoran", "Catering", "Hastane"] as const;
 
 export const projects: Project[] = [
   {
-    title: "Otel Odası",
-    location: "Doha",
-    image: "/projects/hotel-room-real.jpg",
+    title: "Otel",
+    location: "Muğla",
+    image: "/chef-team.jpg",
     imagePosition: "center 58%",
-    stone: "Calacatta Mermer Zemin",
-    source: "Pexels, photo 6987719",
-    sourceUrl: "https://www.pexels.com/photo/6987719/"
+    stone: "Paslanmaz hazırlık hattı ve servis üniteleri",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com"
   },
   {
-    title: "Lüks Villa",
+    title: "Restoran",
     location: "Bodrum",
-    image: "/projects/luxury-villa-real.jpg",
+    image: "/chef-prep.jpg",
     imagePosition: "center 56%",
-    stone: "Damarlı Mermer Zemin",
-    source: "Pexels, photo 33685850",
-    sourceUrl: "https://www.pexels.com/photo/33685850/"
+    stone: "Evye tezgahı ve soğutmalı çalışma ünitesi",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com"
   },
   {
-    title: "Banyo",
-    location: "Londra",
-    image: "/projects/bathroom-real.jpg",
+    title: "Catering",
+    location: "İzmir",
+    image: "/pots-stove.jpg",
     imagePosition: "center 54%",
-    stone: "Ivory Mermer Duvar",
-    source: "Pexels, photo 7601171",
-    sourceUrl: "https://www.pexels.com/photo/7601171/"
+    stone: "Modüler tezgah ve depolama sistemi",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com"
   },
   {
-    title: "Cephe",
-    location: "Dubai",
-    image: "/projects/facade-real.jpg",
+    title: "Hastane",
+    location: "Antalya",
+    image: "/kitchen-tools-dark.jpg",
     imagePosition: "center 60%",
-    stone: "Damarlı Mermer Paneller",
-    source: "Unsplash, photo iqlAuSH8INw",
-    sourceUrl:
-      "https://unsplash.com/photos/modern-building-with-marble-facade-and-glass-windows-iqlAuSH8INw"
+    stone: "Hijyenik paslanmaz üretim hattı",
+    source: "İnoks Muğla",
+    sourceUrl: "mailto:info@inoksmugla.com"
   }
 ];
 
 export const processSteps: ProcessStep[] = [
   {
     label: "01",
-    title: "Ocak Seçimi",
+    title: "Proje & Ölçü",
     body:
-      "Bloklar damar sürekliliği, yapısal sağlamlık ve projeye özel renk aralığına göre seçilir."
+      "Mekân planı, ekipman listesi ve kullanım senaryosuna göre ölçü, modül ve malzeme seçimi netleştirilir."
   },
   {
     label: "02",
-    title: "Hassas Kesim",
+    title: "Kesim & Büküm",
     body:
-      "Katramalı kesim ve köprü kesim süreçleri plaka kalınlığını, bookmatch yönünü ve toleransları kontrol altında tutar."
+      "Paslanmaz saclar CNC lazer ve abkant ile kesilir; proje toleranslarına göre gövde parçaları hazırlanır."
   },
   {
     label: "03",
-    title: "Yüzey İşleme",
+    title: "Kaynak & Montaj",
     body:
-      "Honlu, cilalı, fırçalı ve dolgulu yüzeyler onay öncesinde kontrollü ışık altında incelenir."
+      "TIG/MIG kaynak, zımpara ve montaj adımları tamamlanır; kapak, raf ve aksesuarlar bir araya getirilir."
   },
   {
     label: "04",
-    title: "İhracat Paketleme",
+    title: "Test & Teslimat",
     body:
-      "Kasalar uluslararası sevkiyat için güçlendirilir; plaka sıraları ve proje dokümantasyonu etiketlenir."
+      "Soğutma ve mekanik kontroller yapılır; sahada kurulum ve devreye alma için sevk planlanır."
   }
 ];

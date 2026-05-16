@@ -113,11 +113,19 @@ button {
   color: var(--ink);
 }
 
-.brand-logo {
-  display: block;
-  width: auto;
-  height: 52px;
-  object-fit: contain;
+.brand-wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1;
+}
+
+.brand-wordmark-main {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .desktop-nav {
@@ -714,6 +722,20 @@ legend {
   line-height: 1.7;
 }
 
+.catalog {
+  border-top: 1px solid var(--line);
+}
+
+.catalog-copy {
+  margin-bottom: 0;
+}
+
+.catalog-download {
+  gap: 10px;
+  margin-top: 28px;
+  border-color: var(--line);
+}
+
 .footer-cta {
   display: grid;
   gap: clamp(42px, 7vw, 96px);
@@ -1037,8 +1059,9 @@ legend {
     display: none;
   }
 
-  .brand-logo {
-    height: 44px;
+  .brand-wordmark-main {
+    font-size: 15px;
+    letter-spacing: 0.08em;
   }
 
   .desktop-nav a {

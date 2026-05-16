@@ -62,10 +62,10 @@ export default function ProcessTimeline() {
     <section className="section process" id="process" ref={ref}>
       <div className="process-copy">
         <p className="eyebrow">Üretim</p>
-        <h2>Ocak bloğundan ihracata hazır kasaya.</h2>
+        <h2>Ölçüden sahaya hazır teslimata.</h2>
         <p>
-          Şeffaf üretim akışı; mimarlara, yüklenicilere ve satın alma ekiplerine
-          ilk plaka sevkiyattan önce güven verir.
+          Şeffaf üretim akışı; mimarlara, yüklenicilere ve işletme sahiplerine
+          ilk montajdan önce güven verir.
         </p>
       </div>
 

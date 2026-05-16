@@ -107,7 +107,7 @@ export default function Projects() {
     <section className="projects" id="projects" ref={ref}>
       <div className="project-heading">
         <p className="eyebrow">Projeler</p>
-        <h2>Doğal taşın mimari ölçekteki karşılığı.</h2>
+        <h2>İnoks ekipmanın proje ölçekteki karşılığı.</h2>
       </div>
 
       <div className="project-track">
@@ -115,7 +115,7 @@ export default function Projects() {
           <article className="project-slide" key={project.title}>
             <Image
               src={project.image}
-              alt={`${project.title} doğal taş projesi`}
+              alt={`${project.title} endüstriyel mutfak projesi`}
               fill
               sizes="100vw"
               quality={84}

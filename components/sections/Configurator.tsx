@@ -8,8 +8,8 @@ import { useReducedMotion } from "@/components/animation/useReducedMotion";
 
 export default function Configurator() {
   const [stoneId, setStoneId] = useState<Stone["id"]>("marble");
-  const [finish, setFinish] = useState<(typeof finishes)[number]>("Honlu");
-  const [application, setApplication] = useState<(typeof applications)[number]>("Lobi");
+  const [finish, setFinish] = useState<(typeof finishes)[number]>("AISI 304");
+  const [application, setApplication] = useState<(typeof applications)[number]>("Otel");
   const panelRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const reducedMotion = useReducedMotion();
@@ -78,14 +78,14 @@ export default function Configurator() {
     <section className="section configurator" id="specification" ref={sectionRef}>
       <div className="configurator-copy">
         <p className="eyebrow">Seçim</p>
-        <h2>Projeye hazır bir taş brief’i oluşturun.</h2>
+        <h2>Projeye hazır bir ekipman brief’i oluşturun.</h2>
         <p>
-          Taş tipini, yüzeyi ve kullanım alanını seçin. Bu bölüm satıştan çok
-          numune, plaka uygunluğu, teklif ve ihracat hazırlığına odaklanır.
+          Ürün tipini, malzemeyi ve kullanım sektörünü seçin. Bu bölüm satıştan çok
+          ölçü uygunluğu, teknik teklif ve üretim planlamasına odaklanır.
         </p>
 
         <fieldset>
-          <legend>Taş tipi</legend>
+          <legend>Ürün tipi</legend>
           <div className="option-row">
             {stones.map((stone) => (
               <button
@@ -102,7 +102,7 @@ export default function Configurator() {
         </fieldset>
 
         <fieldset>
-          <legend>Yüzey işlemi</legend>
+          <legend>Malzeme</legend>
           <div className="option-row">
             {finishes.map((item) => (
               <button
@@ -119,7 +119,7 @@ export default function Configurator() {
         </fieldset>
 
         <fieldset>
-          <legend>Kullanım alanı</legend>
+          <legend>Sektör</legend>
           <div className="option-row">
             {applications.map((item) => (
               <button
@@ -135,7 +135,7 @@ export default function Configurator() {
           </div>
         </fieldset>
 
-        <a className="quote-link" href="mailto:info@mantom.com">
+        <a className="quote-link" href="mailto:info@inoksmugla.com">
           Teklif Al
         </a>
       </div>
@@ -143,7 +143,7 @@ export default function Configurator() {
       <div className="config-panel-wrap">
         <div className="config-panel media-shell" ref={panelRef}>
           <Image
-            alt={`${activeStone.name} plaka önizlemesi`}
+            alt={`${activeStone.name} ürün önizlemesi`}
             fill
             key={activeStone.image}
             quality={85}
@@ -154,7 +154,7 @@ export default function Configurator() {
         <div className="config-summary">
           <p>{activeStone.name}</p>
           <p>
-            {finish} yüzey / {application} uygulaması
+            {finish} malzeme / {application} sektörü
           </p>
           <p>{activeStone.description}</p>
         </div>

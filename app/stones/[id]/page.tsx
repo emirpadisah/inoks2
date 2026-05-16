@@ -23,12 +23,12 @@ export async function generateMetadata({ params }: StonePageProps) {
 
   if (!stone) {
     return {
-      title: "Taş Bulunamadı"
+      title: "Ürün Bulunamadı"
     };
   }
 
   return {
-    title: `${stone.name} | Mantom`,
+    title: `${stone.name} | İnoks Muğla`,
     description: stone.description
   };
 }
@@ -49,7 +49,7 @@ export default async function StonePage({ params }: StonePageProps) {
           <div className="stone-detail-copy">
             <Link className="back-link" href="/#collection">
               <ArrowLeft aria-hidden="true" size={17} strokeWidth={1.6} />
-              Koleksiyon
+              Ürünler
             </Link>
             <p className="eyebrow">{stone.origin}</p>
             <h1>{stone.name}</h1>
@@ -57,7 +57,7 @@ export default async function StonePage({ params }: StonePageProps) {
 
             <div className="stone-detail-specs">
               <div>
-                <span>Yüzey</span>
+                <span>Malzeme</span>
                 <strong>{stone.surface}</strong>
               </div>
               <div>
@@ -73,7 +73,7 @@ export default async function StonePage({ params }: StonePageProps) {
             </ul>
 
             <div className="stone-detail-actions">
-              <a href="mailto:info@mantom.com">
+              <a href="mailto:info@inoksmugla.com">
                 Teklif al <ArrowUpRight aria-hidden="true" size={17} strokeWidth={1.6} />
               </a>
               <a href={stone.sourceUrl} rel="noreferrer" target="_blank">

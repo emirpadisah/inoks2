@@ -49,18 +49,18 @@ export default function ProductGrid() {
   return (
     <section className="section products" id="collection" ref={ref}>
       <div className="section-heading collection-copy">
-        <p className="eyebrow">Koleksiyon</p>
-        <h2>Rafine yüzeyler için seçili doğal taşlar.</h2>
+        <p className="eyebrow">Ürünler</p>
+        <h2>Endüstriyel mutfak için seçili inoks ekipmanlar.</h2>
         <p>
-          Plakalar ton, damar hareketi, yüzey ve kullanım alanına göre
-          sınıflandırılır; proje ekipleri malzeme kararından şartnameye hızlıca ilerler.
+          Tezgah, dolap, evye ve servis üniteleri kullanım alanına göre
+          sınıflandırılır; proje ekipleri ihtiyaç listesinden teklife hızlıca ilerler.
         </p>
       </div>
 
       <div className="product-grid">
         {stones.map((stone) => (
           <Link
-            aria-label={`${stone.name} plakasını incele`}
+            aria-label={`${stone.name} ürününü incele`}
             className="stone-card"
             href={`/stones/${stone.id}`}
             key={stone.id}
@@ -71,7 +71,7 @@ export default function ProductGrid() {
             >
               <Image
                 src={stone.image}
-                alt={`${stone.name} doğal taş dokusu`}
+                alt={`${stone.name} endüstriyel mutfak ekipmanı`}
                 className="stone-card-photo"
                 height={1200}
                 sizes="(max-width: 899px) 88vw, 25vw"

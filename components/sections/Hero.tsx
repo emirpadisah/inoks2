@@ -90,7 +90,7 @@ export default function Hero() {
     <section className="hero" id="home" ref={ref}>
       <div className="hero-backdrop media-shell" aria-hidden="true">
         <Image
-          src="/hero-backdrop-real.jpg"
+          src="/industrial-kitchen-wide.jpg"
           alt=""
           fill
           priority
@@ -100,31 +100,36 @@ export default function Hero() {
       </div>
 
       <div className="hero-inner">
-        <p className="eyebrow hero-kicker">Türk doğal taşı / plaka / ihracat</p>
+        <p className="eyebrow hero-kicker">Paslanmaz çelik / endüstriyel mutfak / Muğla</p>
         <AnimatedText
           as="h1"
           className="hero-title"
           wordClassName="hero-word"
-          text="Mimari Projeler İçin Doğal Taş"
+          text="Projeler İçin Endüstriyel Mutfak"
         />
         <p className="hero-copy">
-          Mermer, traverten, kireç taşı ve oniks; otel, konut ve cephe
-          projeleri için ölçülü, güven veren ve rafine bir malzeme diliyle seçilir.
+          Teşhir ünitelerinden evye tezgahlarına, soğutmalı dolaplardan çalışma
+          tezgahlarına; otel, restoran ve üretim mutfakları için ölçüye özel inoks çözümler.
         </p>
         <div className="hero-actions">
           <a className="button button-dark" href="#specification">
             Teklif Al
           </a>
-          <a className="button button-ghost" href="#collection">
-            Taşları İncele
+          <a
+            className="button button-ghost"
+            href="/katalog.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Ürünleri İncele
           </a>
         </div>
       </div>
 
       <div className="hero-slab media-shell">
         <Image
-          src="/hero-slab-real.jpg"
-          alt="Büyük premium mermer plaka"
+          src="/gn-containers.jpg"
+          alt="Paslanmaz endüstriyel mutfak ekipmanları"
           fill
           priority
           sizes="(max-width: 899px) 92vw, 44vw"
@@ -133,9 +138,9 @@ export default function Hero() {
       </div>
 
       <div className="hero-meta" aria-label="Company highlights">
-        <span>Bloktan bitmiş plakaya</span>
-        <span>Projeye göre taş seçimi</span>
-        <span>Uluslararası ihracat paketleme</span>
+        <span>Ölçüden montaja</span>
+        <span>Projeye özel üretim</span>
+        <span>Muğla ve Ege bölgesi teslimat</span>
       </div>
     </section>
   );

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mantom | Premium Doğal Taş",
+  title: "İnoks Muğla | Endüstriyel Mutfak",
   description:
-    "Mermer, traverten, kireç taşı ve oniks odaklı premium doğal taş projeleri için modern bir tanıtım sitesi."
+    "Muğla merkezli İnoks Muğla; otel, restoran, catering ve hastane projeleri için paslanmaz endüstriyel mutfak ekipmanları üretir."
 };
 
 export default function RootLayout({
