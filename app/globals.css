@@ -562,6 +562,11 @@ legend {
   box-shadow: 0 26px 80px rgba(17, 17, 17, 0.1);
 }
 
+.config-panel-image {
+  position: absolute;
+  inset: 0;
+}
+
 .config-summary {
   display: grid;
   grid-template-columns: 0.7fr 1fr 1.4fr;

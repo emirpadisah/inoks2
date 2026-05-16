@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "İnoks Muğla | Endüstriyel Mutfak",
+  title: "Muğla İnoks",
   description:
-    "Muğla merkezli İnoks Muğla; otel, restoran, catering ve hastane projeleri için paslanmaz endüstriyel mutfak ekipmanları üretir."
+    "Muğla İnoks; otel, restoran, catering ve hastane projeleri için paslanmaz endüstriyel mutfak ekipmanları üretir."
 };
 
 export default function RootLayout({

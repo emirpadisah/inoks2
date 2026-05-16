@@ -36,7 +36,7 @@ export const stones: Stone[] = [
     use: "Otel büfeleri, restoran servis hatları, catering",
     description:
       "Bain-marie, teşhir vitrinleri ve servis bankoları; hijyenik paslanmaz yüzey ve proje ölçüsüne göre üretilir.",
-    image: "/gn-containers.jpg",
+    image: "/stones/1.png",
     source: "İnoks Muğla",
     sourceUrl: "mailto:info@inoksmugla.com",
     specs: ["Cam sneeze guard", "GN 1/1 hazne uyumu", "Projeye özel ebat"]
@@ -49,7 +49,7 @@ export const stones: Stone[] = [
     use: "Endüstriyel mutfaklar, bulaşık alanları, hazırlık üniteleri",
     description:
       "Tek veya çift hazneli evye tezgahları, süzgeçli yüzey ve alt raf seçenekleriyle yoğun kullanıma uygun üretilir.",
-    image: "/stainless-worktable.jpg",
+    image: "/stones/2.png",
     source: "İnoks Muğla",
     sourceUrl: "mailto:info@inoksmugla.com",
     specs: ["Derin paslanmaz hazne", "Ayarlanabilir ayak", "Alt açık veya kapalı raf"]
@@ -62,7 +62,7 @@ export const stones: Stone[] = [
     use: "Hazırlık mutfakları, otel ana mutfak, catering üretim",
     description:
       "Soğutmalı çalışma tezgahları ve hazırlık dolapları; sıcaklık kontrollü, modüler ve proje planına göre konfigüre edilir.",
-    image: "/professional-equipment.jpg",
+    image: "/stones/3.png",
     source: "İnoks Muğla",
     sourceUrl: "mailto:info@inoksmugla.com",
     specs: ["Kapılı veya çekmeceli alt modül", "Dijital sıcaklık kontrol", "Enerji verimli kompresör"]
@@ -75,7 +75,7 @@ export const stones: Stone[] = [
     use: "Ana üretim hatları, pastane, endüstriyel mutfak depo",
     description:
       "Geniş çalışma yüzeyli tezgahlar ve depolama üniteleri; kaynaklı sağlam gövde ve hijyen standartlarına uygun bitiş.",
-    image: "/hood-pans.jpg",
+    image: "/stones/4.png",
     source: "İnoks Muğla",
     sourceUrl: "mailto:info@inoksmugla.com",
     specs: ["Üst tezgah + alt kapak", "Hijyenik birleşim noktaları", "Projeye özel uzunluk"]

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: StonePageProps) {
   }
 
   return {
-    title: `${stone.name} | İnoks Muğla`,
+    title: `${stone.name} | Muğla İnoks`,
     description: stone.description
   };
 }

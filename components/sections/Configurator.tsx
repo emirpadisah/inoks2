@@ -11,6 +11,7 @@ export default function Configurator() {
   const [finish, setFinish] = useState<(typeof finishes)[number]>("AISI 304");
   const [application, setApplication] = useState<(typeof applications)[number]>("Otel");
   const panelRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const reducedMotion = useReducedMotion();
 
@@ -38,7 +39,27 @@ export default function Configurator() {
         }
       );
     },
-    { dependencies: [stoneId, reducedMotion], revertOnUpdate: true }
+    { dependencies: [reducedMotion] }
+  );
+
+  useGSAP(
+    () => {
+      if (reducedMotion || !imageRef.current) {
+        return;
+      }
+
+      gsap.fromTo(
+        imageRef.current,
+        { autoAlpha: 0, scale: 1.04 },
+        {
+          autoAlpha: 1,
+          scale: 1,
+          duration: 0.45,
+          ease: "power3.out"
+        }
+      );
+    },
+    { dependencies: [stoneId, reducedMotion] }
   );
 
   useGSAP(
@@ -142,14 +163,16 @@ export default function Configurator() {
 
       <div className="config-panel-wrap">
         <div className="config-panel media-shell" ref={panelRef}>
-          <Image
-            alt={`${activeStone.name} ürün önizlemesi`}
-            fill
-            key={activeStone.image}
-            quality={85}
-            sizes="(max-width: 899px) 92vw, 45vw"
-            src={activeStone.image}
-          />
+          <div className="config-panel-image" ref={imageRef}>
+            <Image
+              alt={`${activeStone.name} ürün önizlemesi`}
+              fill
+              key={stoneId}
+              quality={85}
+              sizes="(max-width: 899px) 92vw, 45vw"
+              src={activeStone.image}
+            />
+          </div>
         </div>
         <div className="config-summary">
           <p>{activeStone.name}</p>
